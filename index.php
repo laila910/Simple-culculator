@@ -10,6 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
+        body {
+            font-size: 20px;
+            color: blue;
+        }
+
         input {
             width: 50%;
             padding: 10px;
@@ -31,6 +36,7 @@
             padding: 10px;
             margin-right: 20px;
             font-size: 20px;
+            margin-bottom: 20px;
         }
 
         </style>
