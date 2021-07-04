@@ -13,6 +13,7 @@
         body {
             font-size: 20px;
             color: blue;
+            font-weight: bolder;
         }
 
         input {
