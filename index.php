@@ -1,26 +1,61 @@
-<<!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-    <html>
+<!DOCTYPE html>
 
-        <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title></title>
-            <meta name="description" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="">
-        </head>
+<html>
 
-        <body>
-            <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+        input {
+            width: 50%;
+            padding: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 10px;
+        }
+
+        button {
+            color: #fff;
+            background-color: #000;
+            border: none;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        </style>
+    </head>
+
+    <body>
 
 
-            <script src="" async defer></script>
-        </body>
+        <form>
+            <input type="text" name="number1" placeholder="please enter your first number "><br>
+            <input type="text" name="number2" placeholder="please enter your second number "><br><br>
+            <select>
+                <option>no select</option>
+                <option>Addition</option>
+                <option>Subtract</option>
+                <option>Multiply</option>
+                <option>Divison</option>
+            </select> <br> <br>
+            <button type="button" name="button"> calculate</button><span>click me if you want to get the result</span>
+        </form>
 
-    </html>
+
+        <?php 
+                    
+                    
+                    ?>
+        <script src="" async defer></script>
+    </body>
+
+</html>
