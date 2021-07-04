@@ -21,6 +21,7 @@
 
         select {
             padding: 10px;
+            font-size: 20px;
         }
 
         button {
@@ -29,6 +30,7 @@
             border: none;
             padding: 10px;
             margin-right: 20px;
+            font-size: 20px;
         }
 
         </style>
@@ -40,19 +42,48 @@
         <form>
             <input type="text" name="number1" placeholder="please enter your first number "><br>
             <input type="text" name="number2" placeholder="please enter your second number "><br><br>
-            <select>
+            <select name="operation">
                 <option>no select</option>
                 <option>Addition</option>
                 <option>Subtract</option>
                 <option>Multiply</option>
-                <option>Divison</option>
+                <option>Division</option>
             </select> <br> <br>
-            <button type="button" name="button"> calculate</button><span>click me if you want to get the result</span>
+            <button type="submit" name="calculate" value="calculate"> Calculate</button><span>click me if you want to
+                get the
+                result</span>
         </form>
 
 
         <?php 
+           if (isset($_GET['calculate']))   {
+             $num1 = $_GET['number1'];
+             $num2 = $_GET['number2'];
+             $oper = $_GET['operation'];
+             switch($oper){
+                case "no select":
+                    echo "please select the arithmatic operation that you want! ";
+                break;
                     
+                case "Addition":
+                    echo $num1 + $num2;
+                break;
+                    
+                case "Subtract":
+                    echo $num1 - $num2;
+                break;
+                case "Multiply":
+                    echo $num1 * $num2;
+                break;
+                    
+                case "Division":
+                    echo $num1 / $num2;
+                    break;
+                    
+                
+             }
+             
+           }
                     
                     ?>
         <script src="" async defer></script>
